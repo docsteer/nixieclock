@@ -1,0 +1,549 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 4 4
+Title "Raspberry Pi Nixie"
+Date ""
+Rev "B"
+Comp "www.tomsteer.net"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Raspberry_Pi_2_3 J?
+U 1 1 60E65F3C
+P 3050 2850
+AR Path="/60E65F3C" Ref="J?"  Part="1" 
+AR Path="/60E5EF8A/60E65F3C" Ref="J1"  Part="1" 
+F 0 "J1" H 3050 4331 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 3050 4240 50  0000 C CNN
+F 2 "Pi-nixie:Raspberry_Pi_Zero" H 3050 2850 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 3050 2850 50  0001 C CNN
+	1    3050 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60E65F42
+P 3000 4350
+AR Path="/60E65F42" Ref="#PWR?"  Part="1" 
+AR Path="/60E5EF8A/60E65F42" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR0123" H 3000 4100 50  0001 C CNN
+F 1 "GND" H 3005 4177 50  0000 C CNN
+F 2 "" H 3000 4350 50  0001 C CNN
+F 3 "" H 3000 4350 50  0001 C CNN
+	1    3000 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 4150 2650 4350
+Wire Wire Line
+	2650 4350 2750 4350
+Wire Wire Line
+	2750 4150 2750 4350
+Connection ~ 2750 4350
+Wire Wire Line
+	2750 4350 2850 4350
+Wire Wire Line
+	2850 4150 2850 4350
+Connection ~ 2850 4350
+Wire Wire Line
+	2850 4350 2950 4350
+Wire Wire Line
+	2950 4150 2950 4350
+Connection ~ 2950 4350
+Wire Wire Line
+	2950 4350 3000 4350
+Wire Wire Line
+	3000 4350 3050 4350
+Wire Wire Line
+	3350 4350 3350 4150
+Connection ~ 3000 4350
+Wire Wire Line
+	3250 4150 3250 4350
+Connection ~ 3250 4350
+Wire Wire Line
+	3250 4350 3350 4350
+Wire Wire Line
+	3150 4150 3150 4350
+Connection ~ 3150 4350
+Wire Wire Line
+	3150 4350 3250 4350
+Wire Wire Line
+	3050 4150 3050 4350
+Connection ~ 3050 4350
+Wire Wire Line
+	3050 4350 3150 4350
+$Comp
+L power:+5V #PWR?
+U 1 1 60E65F5F
+P 2900 1350
+AR Path="/60E65F5F" Ref="#PWR?"  Part="1" 
+AR Path="/60E5EF8A/60E65F5F" Ref="#PWR0124"  Part="1" 
+F 0 "#PWR0124" H 2900 1200 50  0001 C CNN
+F 1 "+5V" H 2915 1523 50  0000 C CNN
+F 2 "" H 2900 1350 50  0001 C CNN
+F 3 "" H 2900 1350 50  0001 C CNN
+	1    2900 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 1550 2850 1350
+Wire Wire Line
+	2850 1350 2900 1350
+Wire Wire Line
+	2900 1350 2950 1350
+Wire Wire Line
+	2950 1350 2950 1550
+Connection ~ 2900 1350
+Text GLabel 7050 5100 2    50   Input ~ 0
+LED_CTL
+Text GLabel 8400 3200 2    50   Input ~ 0
+MOSI
+Text GLabel 8400 3350 2    50   Input ~ 0
+CLK
+Text GLabel 8400 3050 2    50   Input ~ 0
+STROBE
+$Comp
+L Connector:Conn_01x04_Male J?
+U 1 1 60E65F6E
+P 1050 1950
+AR Path="/60E65F6E" Ref="J?"  Part="1" 
+AR Path="/60E5EF8A/60E65F6E" Ref="J3"  Part="1" 
+F 0 "J3" H 1158 2231 50  0000 C CNN
+F 1 "TERMINAL" H 1158 2140 50  0000 C CNN
+F 2 "Pin_Headers:PinHeader_1x04_P2.54mm_Horizontal" H 1050 1950 50  0001 C CNN
+F 3 "~" H 1050 1950 50  0001 C CNN
+	1    1050 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 1850 1250 1350
+$Comp
+L power:GND #PWR?
+U 1 1 60E65F79
+P 1250 2300
+AR Path="/60E65F79" Ref="#PWR?"  Part="1" 
+AR Path="/60E5EF8A/60E65F79" Ref="#PWR0125"  Part="1" 
+F 0 "#PWR0125" H 1250 2050 50  0001 C CNN
+F 1 "GND" H 1255 2127 50  0000 C CNN
+F 2 "" H 1250 2300 50  0001 C CNN
+F 3 "" H 1250 2300 50  0001 C CNN
+	1    1250 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 2150 1250 2300
+Text Label 2100 1950 0    50   ~ 0
+TXD
+Text Label 2100 2050 0    50   ~ 0
+RXD
+Wire Wire Line
+	2000 3250 2100 3250
+Wire Wire Line
+	2100 3250 2100 2450
+Wire Wire Line
+	2100 2450 2250 2450
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 60E65F85
+P 4500 3650
+AR Path="/60E65F85" Ref="J?"  Part="1" 
+AR Path="/60E5EF8A/60E65F85" Ref="J4"  Part="1" 
+F 0 "J4" H 4472 3582 50  0000 R CNN
+F 1 "GPIO" H 4472 3673 50  0000 R CNN
+F 2 "Pin_Headers:PinHeader_1x03_P2.54mm_Horizontal" H 4500 3650 50  0001 C CNN
+F 3 "~" H 4500 3650 50  0001 C CNN
+	1    4500 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60E65F8B
+P 4200 3850
+AR Path="/60E65F8B" Ref="#PWR?"  Part="1" 
+AR Path="/60E5EF8A/60E65F8B" Ref="#PWR0126"  Part="1" 
+F 0 "#PWR0126" H 4200 3600 50  0001 C CNN
+F 1 "GND" H 4205 3677 50  0000 C CNN
+F 2 "" H 4200 3850 50  0001 C CNN
+F 3 "" H 4200 3850 50  0001 C CNN
+	1    4200 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3850 4200 3750
+Wire Wire Line
+	4200 3750 4300 3750
+Wire Wire Line
+	4300 3650 3850 3650
+Wire Wire Line
+	3850 3550 4300 3550
+NoConn ~ 2250 2250
+NoConn ~ 2250 2350
+NoConn ~ 2250 2650
+NoConn ~ 2250 2750
+NoConn ~ 2250 2850
+NoConn ~ 2250 3050
+NoConn ~ 2250 3150
+NoConn ~ 2250 3250
+NoConn ~ 2250 3350
+NoConn ~ 2250 3450
+NoConn ~ 2250 3550
+NoConn ~ 3850 3150
+NoConn ~ 3850 2950
+NoConn ~ 3850 2750
+NoConn ~ 3850 2650
+NoConn ~ 3850 2550
+NoConn ~ 3850 2050
+NoConn ~ 3850 1950
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60E65FAF
+P 6950 2700
+AR Path="/60E65FAF" Ref="#PWR?"  Part="1" 
+AR Path="/60E5EF8A/60E65FAF" Ref="#PWR0127"  Part="1" 
+F 0 "#PWR0127" H 6950 2550 50  0001 C CNN
+F 1 "+3.3V" H 6965 2873 50  0000 C CNN
+F 2 "" H 6950 2700 50  0001 C CNN
+F 3 "" H 6950 2700 50  0001 C CNN
+	1    6950 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60E65FB5
+P 3350 1300
+AR Path="/60E65FB5" Ref="#PWR?"  Part="1" 
+AR Path="/60E5EF8A/60E65FB5" Ref="#PWR0128"  Part="1" 
+F 0 "#PWR0128" H 3350 1150 50  0001 C CNN
+F 1 "+3.3V" H 3365 1473 50  0000 C CNN
+F 2 "" H 3350 1300 50  0001 C CNN
+F 3 "" H 3350 1300 50  0001 C CNN
+	1    3350 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1350 3350 1300
+Wire Wire Line
+	3250 1550 3250 1350
+Wire Wire Line
+	3250 1350 3350 1350
+Wire Wire Line
+	7150 2900 6950 2900
+Wire Wire Line
+	6950 2900 6950 2700
+Wire Wire Line
+	6750 3200 7150 3200
+Wire Wire Line
+	8200 3050 8400 3050
+Wire Wire Line
+	8200 3200 8400 3200
+Wire Wire Line
+	8200 3350 8400 3350
+$Comp
+L power:+12V #PWR?
+U 1 1 60E65FCF
+P 8500 2600
+AR Path="/60E65FCF" Ref="#PWR?"  Part="1" 
+AR Path="/60E5EF8A/60E65FCF" Ref="#PWR0129"  Part="1" 
+F 0 "#PWR0129" H 8500 2450 50  0001 C CNN
+F 1 "+12V" H 8515 2773 50  0000 C CNN
+F 2 "" H 8500 2600 50  0001 C CNN
+F 3 "" H 8500 2600 50  0001 C CNN
+	1    8500 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 2600 8500 2900
+Wire Wire Line
+	8500 2900 8200 2900
+$Comp
+L power:GND #PWR?
+U 1 1 60E65FD7
+P 7700 4400
+AR Path="/60E65FD7" Ref="#PWR?"  Part="1" 
+AR Path="/60E5EF8A/60E65FD7" Ref="#PWR0130"  Part="1" 
+F 0 "#PWR0130" H 7700 4150 50  0001 C CNN
+F 1 "GND" H 7705 4227 50  0000 C CNN
+F 2 "" H 7700 4400 50  0001 C CNN
+F 3 "" H 7700 4400 50  0001 C CNN
+	1    7700 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L pi-nixie-lib:CD4504B Z?
+U 1 1 60E71647
+P 6300 5400
+AR Path="/60E71647" Ref="Z?"  Part="1" 
+AR Path="/60E5EF8A/60E71647" Ref="Z3"  Part="1" 
+F 0 "Z3" H 6275 6165 50  0000 C CNN
+F 1 "CD4504B" H 6275 6074 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-16_4.55x10.3mm_P1.27mm" H 6200 6150 50  0001 C CNN
+F 3 "" H 6200 6150 50  0001 C CNN
+F 4 "595-CD4504BM96" H 6300 5400 50  0001 C CNN "Mouser P/N"
+	1    6300 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 3250 2100 5100
+Wire Wire Line
+	2100 5100 5750 5100
+Connection ~ 2100 3250
+Wire Wire Line
+	6800 5100 7050 5100
+$Comp
+L power:GND #PWR0131
+U 1 1 60E80846
+P 6300 6500
+F 0 "#PWR0131" H 6300 6250 50  0001 C CNN
+F 1 "GND" H 6305 6327 50  0000 C CNN
+F 2 "" H 6300 6500 50  0001 C CNN
+F 3 "" H 6300 6500 50  0001 C CNN
+	1    6300 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0132
+U 1 1 60E817A6
+P 5600 4750
+F 0 "#PWR0132" H 5600 4600 50  0001 C CNN
+F 1 "+3.3V" H 5615 4923 50  0000 C CNN
+F 2 "" H 5600 4750 50  0001 C CNN
+F 3 "" H 5600 4750 50  0001 C CNN
+	1    5600 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0133
+U 1 1 60E81D0D
+P 7050 4750
+F 0 "#PWR0133" H 7050 4600 50  0001 C CNN
+F 1 "+5V" H 7065 4923 50  0000 C CNN
+F 2 "" H 7050 4750 50  0001 C CNN
+F 3 "" H 7050 4750 50  0001 C CNN
+	1    7050 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 4750 5600 4950
+Wire Wire Line
+	5600 4950 5750 4950
+Wire Wire Line
+	6800 4950 7050 4950
+Wire Wire Line
+	7050 4950 7050 4750
+$Comp
+L power:+3.3V #PWR0134
+U 1 1 60EE50EE
+P 1250 1350
+F 0 "#PWR0134" H 1250 1200 50  0001 C CNN
+F 1 "+3.3V" H 1265 1523 50  0000 C CNN
+F 2 "" H 1250 1350 50  0001 C CNN
+F 3 "" H 1250 1350 50  0001 C CNN
+	1    1250 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 2050 2250 2050
+Wire Wire Line
+	1250 1950 2250 1950
+NoConn ~ 7150 3500
+NoConn ~ 7150 3650
+NoConn ~ 7150 3800
+NoConn ~ 8200 3500
+NoConn ~ 8200 3650
+NoConn ~ 8200 3800
+NoConn ~ 5750 5250
+NoConn ~ 5750 5400
+NoConn ~ 5750 5550
+NoConn ~ 5750 5700
+NoConn ~ 5750 5850
+NoConn ~ 6800 5250
+NoConn ~ 6800 5400
+NoConn ~ 6800 5550
+NoConn ~ 6800 5700
+NoConn ~ 6800 5850
+Wire Wire Line
+	7550 4250 7550 4300
+Connection ~ 3250 1350
+Wire Wire Line
+	3150 1350 3250 1350
+Wire Wire Line
+	3150 1550 3150 1350
+$Comp
+L Timer_RTC:DS1307+ Z4
+U 1 1 5F1A84B5
+P 5650 1650
+F 0 "Z4" H 6194 1696 50  0000 L CNN
+F 1 "DS1307+" H 6194 1605 50  0000 L CNN
+F 2 "Housings_SOIC:SO-8_3.9x4.9mm_P1.27mm" H 5650 1150 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS1307.pdf" H 5650 1450 50  0001 C CNN
+F 4 "700-DS1307Z" H 5650 1650 50  0001 C CNN "Mouser P/N"
+	1    5650 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0135
+U 1 1 5F1AAA2A
+P 5550 900
+F 0 "#PWR0135" H 5550 750 50  0001 C CNN
+F 1 "+5V" H 5565 1073 50  0000 C CNN
+F 2 "" H 5550 900 50  0001 C CNN
+F 3 "" H 5550 900 50  0001 C CNN
+	1    5550 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0136
+U 1 1 5F1AAE6B
+P 5650 2300
+F 0 "#PWR0136" H 5650 2050 50  0001 C CNN
+F 1 "GND" H 5655 2127 50  0000 C CNN
+F 2 "" H 5650 2300 50  0001 C CNN
+F 3 "" H 5650 2300 50  0001 C CNN
+	1    5650 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2050 5650 2200
+Wire Wire Line
+	3850 3050 7150 3050
+Wire Wire Line
+	3850 3250 6750 3250
+Wire Wire Line
+	6750 3200 6750 3250
+Wire Wire Line
+	3850 3350 7150 3350
+Wire Wire Line
+	3850 2350 4150 2350
+Wire Wire Line
+	4150 2350 4150 1450
+Wire Wire Line
+	3850 2250 4250 2250
+Wire Wire Line
+	4250 2250 4250 1550
+$Comp
+L Device:Crystal Y1
+U 1 1 5F2029E5
+P 4800 1850
+F 0 "Y1" V 4846 1981 50  0000 L CNN
+F 1 "32.768kHz" V 4755 1981 50  0000 L CNN
+F 2 "Crystals:Crystal_DS26_D2.0mm_L6.0mm_Horizontal" H 4800 1850 50  0001 C CNN
+F 3 "~" H 4800 1850 50  0001 C CNN
+F 4 "520-TFC2X6-X" H 4800 1850 50  0001 C CNN "Mouser P/N"
+	1    4800 1850
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5150 1700 5150 1750
+Wire Wire Line
+	5150 1850 5150 2000
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5F21E904
+P 6900 1700
+F 0 "BT1" H 7018 1796 50  0000 L CNN
+F 1 "Battery_Cell" H 7018 1705 50  0000 L CNN
+F 2 "Battery_Holders:BatteryHolder_Keystone_1058_1x2032" V 6900 1760 50  0001 C CNN
+F 3 "534-1058" V 6900 1760 50  0001 C CNN
+F 4 "534-1058" H 6900 1700 50  0001 C CNN "534-1058"
+	1    6900 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1250 6900 1250
+Wire Wire Line
+	6900 1250 6900 1500
+Wire Wire Line
+	6900 1800 6900 2200
+Wire Wire Line
+	6900 2200 5650 2200
+Connection ~ 5650 2200
+Wire Wire Line
+	5650 2200 5650 2300
+$Comp
+L Device:R_US R14
+U 1 1 5F226B36
+P 4350 1150
+F 0 "R14" H 4418 1196 50  0000 L CNN
+F 1 "4.7K" H 4418 1105 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4390 1140 50  0001 C CNN
+F 3 "~" H 4350 1150 50  0001 C CNN
+	1    4350 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R15
+U 1 1 5F227411
+P 4700 1150
+F 0 "R15" H 4768 1196 50  0000 L CNN
+F 1 "4.7K" H 4768 1105 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4740 1140 50  0001 C CNN
+F 3 "~" H 4700 1150 50  0001 C CNN
+	1    4700 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 1300 4350 1550
+Wire Wire Line
+	4250 1550 4350 1550
+Connection ~ 4350 1550
+Wire Wire Line
+	4350 1550 5150 1550
+Wire Wire Line
+	4700 1300 4700 1450
+Wire Wire Line
+	4150 1450 4700 1450
+Connection ~ 4700 1450
+Wire Wire Line
+	4700 1450 5150 1450
+Wire Wire Line
+	5550 900  5550 1250
+Wire Wire Line
+	4350 1000 4550 1000
+$Comp
+L power:+3.3V #PWR0137
+U 1 1 5F23AB15
+P 4550 1000
+F 0 "#PWR0137" H 4550 850 50  0001 C CNN
+F 1 "+3.3V" H 4565 1173 50  0000 C CNN
+F 2 "" H 4550 1000 50  0001 C CNN
+F 3 "" H 4550 1000 50  0001 C CNN
+	1    4550 1000
+	1    0    0    -1  
+$EndComp
+Connection ~ 4550 1000
+Wire Wire Line
+	4550 1000 4700 1000
+NoConn ~ 6150 1650
+Wire Wire Line
+	4800 1700 5150 1700
+Wire Wire Line
+	5150 2000 4800 2000
+Text Label 6550 1250 0    50   ~ 0
+VBAT
+$Comp
+L pi-nixie-lib:CD4504B Z?
+U 1 1 60E65FA9
+P 7700 3350
+AR Path="/60E65FA9" Ref="Z?"  Part="1" 
+AR Path="/60E5EF8A/60E65FA9" Ref="Z2"  Part="1" 
+F 0 "Z2" H 7675 4115 50  0000 C CNN
+F 1 "CD4504B" H 7675 4024 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-16_4.55x10.3mm_P1.27mm" H 7600 4100 50  0001 C CNN
+F 3 "" H 7600 4100 50  0001 C CNN
+F 4 "595-CD4504BM96" H 7700 3350 50  0001 C CNN "Mouser P/N"
+	1    7700 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 4250 7700 4400
+Wire Wire Line
+	6300 6300 6300 6500
+NoConn ~ 7550 4300
+NoConn ~ 6150 6300
+$EndSCHEMATC

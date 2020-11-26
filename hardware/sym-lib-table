@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name pi-nixie-lib)(type Legacy)(uri ${KIPRJMOD}/pi-nixie-lib.lib)(options "")(descr ""))
+  (lib (name pi-nixie-rescue)(type Legacy)(uri ${KIPRJMOD}/pi-nixie-rescue.lib)(options "")(descr ""))
+)
